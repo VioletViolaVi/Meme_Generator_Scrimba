@@ -18,20 +18,20 @@ body {
   padding: 2rem 1rem;
 }
 
-.troll-container {
+.face-container {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  align-items: stretch;
 }
 
-.header-img {
-  width: 3rem;
-  height: 2.5rem;
+.far.fa-grin-tongue-wink {
+  font-size: 2.5rem;
+  margin-right: 0.5rem;
 }
 
-.title {
+.main-title {
   font-size: 1.8rem;
+  margin-left: 0.5rem;
 }
 
 .react-course-container {
@@ -47,16 +47,15 @@ body {
     justify-content: space-between;
   }
 
-  .header-img {
-    width: 4rem;
-    height: 3rem;
+  .far.fa-grin-tongue-wink {
+    font-size: 3rem;
   }
 
-  .title {
+  .main-title {
     font-size: 2.5rem;
   }
 
-  .react-course-container p {
+  .sub-title {
     font-size: 1.8rem;
   }
 }
