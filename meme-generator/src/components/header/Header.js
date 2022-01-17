@@ -2,7 +2,7 @@ const Header = () => {
   return (
     <header className="header-container">
       <div className="face-container">
-        <i class="far fa-grin-tongue-wink"></i>
+        <i className="fas fa-grin-beam-sweat"></i>
         <h1 className="main-title">Meme Generator</h1>
       </div>
 

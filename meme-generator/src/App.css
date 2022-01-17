@@ -24,7 +24,7 @@ body {
   justify-content: center;
 }
 
-.far.fa-grin-tongue-wink {
+.fas.fa-grin-beam-sweat {
   font-size: 2.5rem;
   margin-right: 0.5rem;
 }
@@ -47,7 +47,7 @@ body {
     justify-content: space-between;
   }
 
-  .far.fa-grin-tongue-wink {
+  .fas.fa-grin-beam-sweat {
     font-size: 3rem;
   }
 
