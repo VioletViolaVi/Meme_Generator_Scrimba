@@ -7,4 +7,33 @@
 
 body {
   cursor: default;
+  font-family: "Karla", Impact, "Haettenschweiler", "Arial Narrow Bold",
+    sans-serif;
+}
+
+/*********************************************************** header */
+.header-container {
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: #ffffff;
+  padding: 2rem 1rem;
+}
+
+.troll-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.header-img {
+  width: 3rem;
+  height: 2.5rem;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.react-course-container {
+  text-align: center;
 }
