@@ -26,12 +26,12 @@ body {
 
 .fas.fa-grin-beam-sweat {
   font-size: 2.5rem;
-  margin-right: 0.5rem;
+  margin-right: 0.25rem;
 }
 
 .main-title {
   font-size: 1.8rem;
-  margin-left: 0.5rem;
+  margin-left: 0.25rem;
 }
 
 .react-course-container {
@@ -58,4 +58,49 @@ body {
   .sub-title {
     font-size: 1.8rem;
   }
+}
+
+/*********************************************************** meme */
+.meme-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meme-input1,
+.meme-input2 {
+  border: 0.2rem solid #d5d4d8;
+  width: 19rem;
+  height: 3rem;
+  border-radius: 0.3rem;
+  padding-left: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.meme-input1 {
+  margin: 1rem 1rem 2rem;
+}
+
+.meme-input2 {
+  margin: 0 1rem 2rem;
+}
+
+.meme-btn {
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  padding: 1rem;
+  width: 19rem;
+  border-radius: 0.3rem;
+  border: solid 0.1rem #a626d3;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fas.fa-image {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
 }
