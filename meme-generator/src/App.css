@@ -65,6 +65,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .meme-input1,
@@ -126,7 +127,43 @@ body {
   margin-left: 0.5rem;
 }
 
-.fas.fa-image :hover {
-  font-size: 1.1rem;
+.fas.fa-image:hover {
+  font-size: 1.6rem;
   transition: 0.5s;
+}
+
+/************************ (media queries) meme form */
+@media (min-width: 1000px) {
+  .meme-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 2.5rem;
+  }
+
+  .meme-input1,
+  .meme-input2 {
+    width: 29rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+
+  .meme-btn {
+    flex: 0 0 55rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+
+  .meme-btn:hover {
+    font-size: 1.6rem;
+  }
+
+  .fas.fa-image {
+    font-size: 2rem;
+  }
+
+  .fas.fa-image:hover {
+    font-size: 2.1rem;
+  }
 }
