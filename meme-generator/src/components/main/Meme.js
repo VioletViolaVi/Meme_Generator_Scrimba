@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 const Meme = () => {
   // set state OG of meme via deconstructing
-  const [meme, setMeme] = useState("https://i.imgflip.com/1g8my4.jpg");
+  const [meme, setMeme] = useState("");
 
   const getNewMemeImg = () => {
     // gets memes array
@@ -11,12 +11,12 @@ const Meme = () => {
     // gets random nu 1-99
     const randomNum = Math.floor(Math.random() * 100);
     // gets .url from memes array
-    const { randomUrl } = memeArr[randomNum];
-    console.log(randomUrl);
+    const { url } = memeArr[randomNum];
+    console.log(url);
 
     // change state of meme
     setMeme((prevMeme) => {
-      return (prevMeme = randomUrl);
+      return (prevMeme = url);
     });
   };
 
