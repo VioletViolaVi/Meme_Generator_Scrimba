@@ -12,12 +12,14 @@ const Meme = () => {
     const randomNum = Math.floor(Math.random() * 100);
     // gets .url from memes array
     const { url } = memeArr[randomNum];
-    console.log(url);
-
     // change state of meme
+    setMeme(url);
+
+    /* longer way but don't bother as the current/previous meme is NOT needed to change state unlike the counter example from scrimba:
     setMeme((prevMeme) => {
       return (prevMeme = url);
     });
+    */
   };
 
   return (
