@@ -175,8 +175,21 @@ body {
 }
 
 .img-container img {
-  width: 12rem;
+  width: 19rem;
   height: 16rem;
+
   border: solid 0.5rem #a626d3;
   border-radius: 0.3rem;
+}
+
+/************************ (media queries) image */
+@media (min-width: 1000px) {
+  .img-container {
+    display: flex;
+  }
+
+  .img-container img {
+    width: 40rem;
+    height: 20rem;
+  }
 }
