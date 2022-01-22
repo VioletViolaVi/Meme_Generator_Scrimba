@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 const Meme = () => {
   // set state OG of meme via deconstructing
-  const [meme, setMeme] = useState("https://i.imgflip.com/30b1gx.jpg");
+  const [meme, setMeme] = useState("https://i.imgflip.com/1g8my4.jpg");
 
   const getNewMemeImg = () => {
     // gets memes array
@@ -38,7 +38,9 @@ const Meme = () => {
         Get a new meme image <i className="fas fa-image"></i>
       </button>
 
-      <img src={meme} alt="Random from Data.js file." />
+      <figure className="img-container">
+        <img src={meme} alt="Random from Data.js file." />
+      </figure>
     </section>
   );
 };

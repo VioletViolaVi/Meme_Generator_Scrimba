@@ -168,3 +168,15 @@ body {
     font-size: 2.1rem;
   }
 }
+
+/*********************************************************** image */
+.img-container {
+  margin: 0.54rem auto;
+}
+
+.img-container img {
+  width: 12rem;
+  height: 16rem;
+  border: solid 0.5rem #a626d3;
+  border-radius: 0.3rem;
+}
