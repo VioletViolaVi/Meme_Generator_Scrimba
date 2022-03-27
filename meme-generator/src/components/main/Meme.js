@@ -1,25 +1,37 @@
 import Data from "./Data";
 import React, { useState } from "react";
 
+// set state
 const Meme = () => {
-  // set state OG of meme via deconstructing
-  const [meme, setMeme] = useState("");
+  const [meme, setMeme] = useState({
+    topText: "",
+    bottomText: "",
+    memeImage: "https://i.imgflip.com/261o3j.jpg",
+  });
 
-  const getNewMemeImg = () => {
-    // gets memes array
-    const memeArr = Data.data.memes;
-    // gets random nu 1-99
-    const randomNum = Math.floor(Math.random() * 100);
-    // gets .url from memes array
-    const { url } = memeArr[randomNum];
-    // change state of meme
-    setMeme(url);
-
-    /* longer way but don't bother as the current/previous meme is NOT needed to change state unlike the counter example from scrimba:
+  // deals w/ typed in data
+  const handleInputs = (event) => {
     setMeme((prevMeme) => {
-      return (prevMeme = url);
+      const { name, type, checked, value } = event.target;
+      return {
+        ...prevMeme,
+        [name]: type === "checkbox" ? checked : value,
+      };
     });
-    */
+  };
+
+  // deals w/ random images
+  const getNewMemeImg = () => {
+    const memeArr = Data.data.memes; // gets memes array
+    const randomNum = Math.floor(Math.random() * 100); // gets random number (1-99)
+    const { url } = memeArr[randomNum]; // gets .url from memes array
+    // change state of meme
+    setMeme((prevMeme) => {
+      return {
+        ...prevMeme,
+        memeImage: url,
+      };
+    });
   };
 
   return (
@@ -29,20 +41,31 @@ const Meme = () => {
         type="text"
         placeholder="First Part"
         className="meme-input1"
+        value={meme.topText}
+        onChange={handleInputs}
+        name="topText"
       />
       <input
         required
         type="text"
         placeholder="Second Part"
         className="meme-input2"
+        value={meme.bottomText}
+        onChange={handleInputs}
+        name="bottomText"
       />
       <button type="submit" className="meme-btn" onClick={getNewMemeImg}>
         Get a new meme image <i className="fas fa-image"></i>
       </button>
 
       <figure className="img-container">
-        <img src={meme} alt="Random from Data.js file." />
+        <img src={meme.memeImage} alt="Random from Data.js file." />
       </figure>
+
+      <div>
+        <p>{meme.topText}</p>
+        <p>{meme.bottomText}</p>
+      </div>
     </section>
   );
 };
