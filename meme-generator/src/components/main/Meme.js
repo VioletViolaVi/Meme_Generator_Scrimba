@@ -6,7 +6,7 @@ const Meme = () => {
   const [meme, setMeme] = useState({
     topText: "",
     bottomText: "",
-    memeImage: "https://i.imgflip.com/261o3j.jpg",
+    memeImage: "https://i.imgflip.com/2wifvo.jpg",
   });
 
   // deals w/ typed in data
@@ -62,10 +62,8 @@ const Meme = () => {
         <img src={meme.memeImage} alt="Random from Data.js file." />
       </figure>
 
-      <div>
-        <p>{meme.topText}</p>
-        <p>{meme.bottomText}</p>
-      </div>
+      <p className="top-text">{meme.topText}</p>
+      <p className="bottom-text">{meme.bottomText}</p>
     </section>
   );
 };

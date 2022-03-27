@@ -144,7 +144,7 @@ body {
 
   .meme-input1,
   .meme-input2 {
-    width: 29rem;
+    width: 28rem;
     height: 4rem;
     font-size: 1.5rem;
     padding-left: 1rem;
@@ -191,5 +191,47 @@ body {
   .img-container img {
     width: 40rem;
     height: 20rem;
+  }
+}
+
+/*********************************************************** meme text */
+.top-text,
+.bottom-text {
+  position: absolute;
+  color: white;
+  font-size: 5rem;
+  font-weight: bolder;
+  font-family: Impact, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 15px;
+}
+
+.top-text {
+  top: 26rem;
+}
+
+.bottom-text {
+  bottom: 3rem;
+}
+
+/************************ (media queries) meme text */
+@media (min-width: 1000px) {
+  .top-text,
+  .bottom-text {
+    font-size: 3rem;
+  }
+
+  .top-text {
+    top: 23rem;
+  }
+
+  .bottom-text {
+    bottom: 2rem;
   }
 }
